@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/beranda"
+    android:orientation="vertical"
+    android:padding="25dp"
+    tools:context=".TiketActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:layout_marginTop="100dp"
+        android:src="@drawable/group13"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:text="Istana Siak adalah istana kediaman kesultanan siak"
+        android:layout_marginTop="10dp"/>
+
+
+    <CheckBox
+        android:id="@+id/mobil"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:paddingLeft="16dp"
+        android:text="Tiket Mobil = Rp.5.000"
+        android:textColor="@color/white"
+        android:textSize="15sp" />
+
+    <CheckBox
+        android:id="@+id/motor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/mobil"
+        android:paddingLeft="16dp"
+        android:textColor="@color/white"
+        android:text="Tiket Motor = Rp.2.000"
+        android:textSize="15sp" />
+
+    <TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:textColor="@color/white"
+    android:text="Harga Tiket = Rp.10.000"
+    android:textSize="15dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp">
+
+        <TextView
+            android:layout_width="200dp"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:text="Jumlah Tiket"
+            android:textColor="@color/white"
+            android:textSize="18dp"/>
+        <Button
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:onClick="decrement"
+            android:backgroundTint="#EF2525"
+            android:text="-" />
+
+        <TextView
+            android:id="@+id/tvquantity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text="0"
+            android:textColor="@color/white"
+            android:textSize="18dp" />
+
+        <Button
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:onClick="increment"
+            android:backgroundTint="#EF2525"
+            android:text="+" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvharga"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:text="0"
+        android:textColor="#212121"
+        android:textSize="15dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="#EF2525"
+        android:onClick="Submitorder"
+        android:text="Pesan Sekarang"
+        tools:ignore="OnClick" />
+</LinearLayout>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/beranda"
+    android:padding="25dp"
+    android:orientation="vertical"
+    tools:context=".TentangActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="TENTANG KAMI"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:layout_marginLeft="250dp"
+        android:layout_marginTop="45dp"
+        android:textSize="15dp"/>
+
+    <ImageButton
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="35dp"
+        android:src="@drawable/group1" />
+
+    <ImageButton
+        android:layout_width="130dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="110dp"
+        android:layout_marginTop="35dp"
+        android:src="@drawable/group2"/>
+
+</RelativeLayout>
